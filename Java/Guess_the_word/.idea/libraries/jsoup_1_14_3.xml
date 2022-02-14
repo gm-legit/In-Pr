@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jsoup-1.14.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/Programowanie/sdk/Java/Jsoup/jsoup-1.14.3.jar!/" />
+      <root url="file://$USER_HOME$/Desktop/Programowanie/sdk/Java/Jsoup" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/Desktop/Programowanie/sdk/Java/Jsoup" recursive="false" />
+  </library>
+</component>

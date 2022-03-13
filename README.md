@@ -1,3 +1,3 @@
 # In-Pr
 
-You can find here some of my non-boring projects, that i'll try to upload regurally.
+You can find here some of my projects, that i'll try to upload betweenwhiles.

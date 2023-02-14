@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="800.0" prefWidth="1138.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.toomanybarbershopgui.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="453.0" prefWidth="1200.0" style="-fx-background-color: #BBBBBB;" />
+    <AnchorPane maxHeight="240.0" minHeight="0.0" minWidth="0.0" prefHeight="365.0" prefWidth="1136.0" style="-fx-background-color: #666666;">
+         <children>
+            <Label layoutX="49.0" layoutY="82.0" style="-fx-background-color: #FFFFFF;" text="Barbers" textFill="#0900ff">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color blue="0.5333333611488342" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <TextField fx:id="barbersTF" layoutX="104.0" layoutY="78.0" prefHeight="25.0" prefWidth="43.0" text="4">
+               <effect>
+                  <ColorAdjust brightness="-0.16" contrast="0.05" hue="0.14" saturation="-0.05" />
+               </effect>
+            </TextField>
+            <Label layoutX="14.0" layoutY="204.0" style="-fx-background-color: #FFFFFF;" text="WaitingChairs" textFill="#0900ff">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color blue="0.5333333611488342" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <TextField fx:id="waitingChairsTF" layoutX="104.0" layoutY="200.0" prefHeight="25.0" prefWidth="43.0" text="7">
+               <effect>
+                  <ColorAdjust brightness="-0.16" contrast="0.05" hue="0.14" saturation="-0.05" />
+               </effect>
+            </TextField>
+            <Label layoutX="10.0" layoutY="164.0" style="-fx-background-color: #FFFFFF;" text="WorkingChairs" textFill="#0900ff">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color blue="0.5333333611488342" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <TextField fx:id="workingChairsTF" layoutX="104.0" layoutY="160.0" prefHeight="25.0" prefWidth="43.0" text="2">
+               <effect>
+                  <ColorAdjust brightness="-0.16" contrast="0.05" hue="0.14" saturation="-0.05" />
+               </effect>
+            </TextField>
+            <Slider fx:id="customerSpeedSlider" blockIncrement="1.0" layoutX="803.0" layoutY="64.0" majorTickUnit="50.0" max="100.0" min="-100.0" minorTickCount="1" onKeyReleased="#onCustomerSpeedSliderChanged" onMouseDragReleased="#onCustomerSpeedSliderChanged" onMouseReleased="#onCustomerSpeedSliderChanged" prefHeight="38.0" prefWidth="260.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="0">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="1.0" green="0.05092592537403107" blue="0.05092592537403107" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Slider>
+            <Label layoutX="48.0" layoutY="123.0" style="-fx-background-color: #FFFFFF;" text="Services" textFill="#0900ff">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color blue="0.5333333611488342" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <TextField fx:id="servicesTF" layoutX="104.0" layoutY="118.0" prefHeight="25.0" prefWidth="43.0" text="2">
+               <effect>
+                  <ColorAdjust brightness="-0.16" contrast="0.05" hue="0.14" saturation="-0.05" />
+               </effect>
+            </TextField>
+            <Label fx:id="parametersLabel" layoutX="62.0" layoutY="20.0" style="-fx-background-color: #eaff98;" text="Parameters" textFill="#00ff04">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="1.0" green="0.39351850748062134" blue="0.39351850748062134" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Label fx:id="animationLabel" layoutX="894.0" layoutY="20.0" style="-fx-background-color: #eaff98;" text="Animation" textFill="#00ff04">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="1.0" green="0.39351850748062134" blue="0.39351850748062134" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Label layoutX="695.0" layoutY="66.0" style="-fx-background-color: #FFFFFF;" text="CustomerSpeed" textFill="#0900ff">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color blue="0.5333333611488342" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Label layoutX="706.0" layoutY="112.0" prefHeight="17.0" prefWidth="74.0" style="-fx-background-color: #FFFFFF;" text="BarberSpeed" textFill="#0900ff">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color blue="0.5333333611488342" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <Button fx:id="saveBtn" layoutX="416.0" layoutY="55.0" mnemonicParsing="false" onAction="#onSaveButtonAction" text="Save Configuration" />
+            <Button fx:id="runBtn" layoutX="427.0" layoutY="100.0" mnemonicParsing="false" onAction="#onRunButtonAction" text="Run Animation" />
+            <Button fx:id="stpBtn" layoutX="425.0" layoutY="148.0" mnemonicParsing="false" onAction="#onStopButtonAction" text="Stop Animation" />
+            <Label fx:id="optionsButtonsLabel" layoutX="414.0" layoutY="20.0" style="-fx-background-color: #eaff98;" text="Options Buttons" textFill="#00ff04">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="1.0" green="0.39351850748062134" blue="0.39351850748062134" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Slider fx:id="barberSpeedSlider" blockIncrement="1.0" layoutX="803.0" layoutY="112.0" majorTickUnit="50.0" max="100.0" min="-100.0" minorTickCount="1" onKeyReleased="#onBarberSpeedSliderChanged" onMouseDragReleased="#onBarberSpeedSliderChanged" onMouseReleased="#onBarberSpeedSliderChanged" prefHeight="38.0" prefWidth="260.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="0">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color red="1.0" green="0.05092592537403107" blue="0.05092592537403107" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Slider>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
